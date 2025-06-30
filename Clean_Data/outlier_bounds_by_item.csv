@@ -1,0 +1,57 @@
+Group,Column,Lower_Bound,Upper_Bound
+Cereals excluding rice,production_tonnes,-4920666.875,8383200.125
+"Hen eggs in shell, fresh",production_tonnes,-128722.38,219937.3
+"Meat of buffalo, fresh or chilled",production_tonnes,-65266.875,111724.125
+"Meat of cattle with the bone, fresh or chilled",production_tonnes,-207778.10000000003,354828.46
+"Meat of chickens, fresh or chilled",production_tonnes,-146950.0,252650.0
+"Meat of goat, fresh or chilled",production_tonnes,-13830.125,23612.875
+"Meat of pig with the bone, fresh or chilled",production_tonnes,-193250.0,325550.0
+"Meat of sheep, fresh or chilled",production_tonnes,-36508.5,61699.5
+Raw milk of buffalo,production_tonnes,-796582.75625,1348386.05375
+Raw milk of camel,production_tonnes,-67100.0,123460.0
+Raw milk of cattle,production_tonnes,-2274583.25,3833638.75
+Raw milk of goats,production_tonnes,-126166.54499999997,231356.21499999997
+Raw milk of sheep,production_tonnes,-116238.125,213742.875
+Rice,production_tonnes,-1534866.375,2608042.625
+Cereals excluding rice,GHG_kg,-0.09154999999999999,0.49605
+"Hen eggs in shell, fresh",GHG_kg,-0.7665000000000001,2.8071
+"Meat of buffalo, fresh or chilled",GHG_kg,-145.58603750000003,338.36366250000003
+"Meat of cattle with the bone, fresh or chilled",GHG_kg,-62.674875000000014,155.42732500000002
+"Meat of chickens, fresh or chilled",GHG_kg,-2.308,5.052
+"Meat of goat, fresh or chilled",GHG_kg,-32.80468750000001,130.0414125
+"Meat of pig with the bone, fresh or chilled",GHG_kg,-7.010162500000002,18.842137500000003
+"Meat of sheep, fresh or chilled",GHG_kg,-33.401700000000005,120.3931
+Raw milk of buffalo,GHG_kg,-2.1068124999999998,7.9306874999999994
+Raw milk of camel,GHG_kg,-3.5561250000000006,16.645675
+Raw milk of cattle,GHG_kg,-3.8396500000000002,9.71095
+Raw milk of goats,GHG_kg,-4.58375,11.106649999999998
+Raw milk of sheep,GHG_kg,-5.450537500000001,17.0403625
+Rice,GHG_kg,-2.0135124999999996,6.5849874999999995
+Cereals excluding rice,emissions_CO2eq_AR5,-871.7474499999998,1502.2829499999998
+"Hen eggs in shell, fresh",emissions_CO2eq_AR5,-95.01284999999999,164.09234999999998
+"Meat of buffalo, fresh or chilled",emissions_CO2eq_AR5,-6668.358212499999,11351.2964875
+"Meat of cattle with the bone, fresh or chilled",emissions_CO2eq_AR5,-8061.431074999997,13804.662724999996
+"Meat of chickens, fresh or chilled",emissions_CO2eq_AR5,-113.80425,198.39294999999998
+"Meat of goat, fresh or chilled",emissions_CO2eq_AR5,-619.9126375000001,1051.3156625000001
+"Meat of pig with the bone, fresh or chilled",emissions_CO2eq_AR5,-658.7915750000001,1121.138625
+"Meat of sheep, fresh or chilled",emissions_CO2eq_AR5,-1274.9272125,2150.1268875
+Raw milk of buffalo,emissions_CO2eq_AR5,-1908.3639125000002,3214.4577875000004
+Raw milk of camel,emissions_CO2eq_AR5,-316.18952500000006,602.7286750000001
+Raw milk of cattle,emissions_CO2eq_AR5,-3534.5824500000003,6040.8255500000005
+Raw milk of goats,emissions_CO2eq_AR5,-340.59084999999993,606.7527499999999
+Raw milk of sheep,emissions_CO2eq_AR5,-698.901725,1251.522475
+Rice,emissions_CO2eq_AR5,-2810.1935500000004,4787.10745
+Cereals excluding rice,avg_year_temp_change,-1.2737720588235297,2.3364044117647063
+"Hen eggs in shell, fresh",avg_year_temp_change,-1.2376470588235295,2.2343529411764704
+"Meat of buffalo, fresh or chilled",avg_year_temp_change,-1.1732132352941176,1.9671985294117649
+"Meat of cattle with the bone, fresh or chilled",avg_year_temp_change,-1.2548970588235295,2.2788676470588234
+"Meat of chickens, fresh or chilled",avg_year_temp_change,-1.2484117647058823,2.259823529411765
+"Meat of goat, fresh or chilled",avg_year_temp_change,-1.2030882352941177,2.210088235294118
+"Meat of pig with the bone, fresh or chilled",avg_year_temp_change,-1.2074632352941177,2.2194191176470586
+"Meat of sheep, fresh or chilled",avg_year_temp_change,-1.2704117647058824,2.336764705882353
+Raw milk of buffalo,avg_year_temp_change,-1.3088970588235294,2.1045147058823526
+Raw milk of camel,avg_year_temp_change,-1.3689294117647062,2.651117647058824
+Raw milk of cattle,avg_year_temp_change,-1.2568602941176468,2.300845588235294
+Raw milk of goats,avg_year_temp_change,-1.4265147058823526,2.628426470588235
+Raw milk of sheep,avg_year_temp_change,-1.5585735294117642,2.779308823529411
+Rice,avg_year_temp_change,-1.1499632352941176,2.1213897058823528

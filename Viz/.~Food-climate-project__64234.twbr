@@ -1,0 +1,2219 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <_.fcp.PatternedLineMarks.true...PatternedLineMarks />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Food-climate-project?rev=1.3' id='Food-climate-project' path='/workbooks' revision='1.5' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='final_merged_dataset_Food_Climate_Project' inline='true' name='federated.0skrw3m16do58u110kglw13hqk5k' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='final_merged_dataset_Food_Climate_Project' name='textscan.0hnudat0qt8y97111zv0u0abxwyg'>
+            <connection class='textscan' directory='/Users/ivanacaridad/Documents/GitHub/Food-Climate-Data-Driven-Sustainability' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0hnudat0qt8y97111zv0u0abxwyg' name='final_merged_dataset_Food_Climate_Project.csv' table='[final_merged_dataset_Food_Climate_Project#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='integer' name='year' ordinal='1' />
+            <column datatype='string' name='food_item' ordinal='2' />
+            <column datatype='real' name='avg_year_temp_change' ordinal='3' />
+            <column datatype='string' name='country_code' ordinal='4' />
+            <column datatype='real' name='emissions_CO2eq_AR5' ordinal='5' />
+            <column datatype='real' name='GHG_kg' ordinal='6' />
+            <column datatype='real' name='production_tonnes' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[final_merged_dataset_Food_Climate_Project.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¤&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[final_merged_dataset_Food_Climate_Project.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[final_merged_dataset_Food_Climate_Project.csv_CB06D0161C0840A6A17ABA5DD137C5CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[final_merged_dataset_Food_Climate_Project.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_merged_dataset_Food_Climate_Project.csv_CB06D0161C0840A6A17ABA5DD137C5CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>food_item</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[food_item]</local-name>
+            <parent-name>[final_merged_dataset_Food_Climate_Project.csv]</parent-name>
+            <remote-alias>food_item</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[final_merged_dataset_Food_Climate_Project.csv_CB06D0161C0840A6A17ABA5DD137C5CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_year_temp_change</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_year_temp_change]</local-name>
+            <parent-name>[final_merged_dataset_Food_Climate_Project.csv]</parent-name>
+            <remote-alias>avg_year_temp_change</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_merged_dataset_Food_Climate_Project.csv_CB06D0161C0840A6A17ABA5DD137C5CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_code]</local-name>
+            <parent-name>[final_merged_dataset_Food_Climate_Project.csv]</parent-name>
+            <remote-alias>country_code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[final_merged_dataset_Food_Climate_Project.csv_CB06D0161C0840A6A17ABA5DD137C5CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emissions_CO2eq_AR5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[emissions_CO2eq_AR5]</local-name>
+            <parent-name>[final_merged_dataset_Food_Climate_Project.csv]</parent-name>
+            <remote-alias>emissions_CO2eq_AR5</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_merged_dataset_Food_Climate_Project.csv_CB06D0161C0840A6A17ABA5DD137C5CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GHG_kg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GHG_kg]</local-name>
+            <parent-name>[final_merged_dataset_Food_Climate_Project.csv]</parent-name>
+            <remote-alias>GHG_kg</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_merged_dataset_Food_Climate_Project.csv_CB06D0161C0840A6A17ABA5DD137C5CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>production_tonnes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[production_tonnes]</local-name>
+            <parent-name>[final_merged_dataset_Food_Climate_Project.csv]</parent-name>
+            <remote-alias>production_tonnes</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_merged_dataset_Food_Climate_Project.csv_CB06D0161C0840A6A17ABA5DD137C5CD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='GHG kg' datatype='real' name='[GHG_kg]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Production Tonnes (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='6' formula='[production_tonnes]' peg='0' size='7.57465e+06' />
+      </column>
+      <column caption='final_merged_dataset_Food_Climate_Project.csv' datatype='table' name='[__tableau_internal_object_id__].[final_merged_dataset_Food_Climate_Project.csv_CB06D0161C0840A6A17ABA5DD137C5CD]' role='measure' type='quantitative' />
+      <column caption='Avg Year Temp Change' datatype='real' name='[avg_year_temp_change]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country Code' datatype='string' name='[country_code]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+        <semantic-values semantic-role='[Geographical].[Longitude]'>
+          <semantic-value key='&quot;CSK&quot;' value='15.473000000000001' />
+        </semantic-values>
+        <semantic-values semantic-role='[Geographical].[Latitude]'>
+          <semantic-value key='&quot;CSK&quot;' value='49.817500000000003' />
+        </semantic-values>
+      </column>
+      <column caption='emissions CO2eq AR5' datatype='real' name='[emissions_CO2eq_AR5]' role='measure' type='quantitative' />
+      <column caption='Food Item' datatype='string' name='[food_item]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Cereals excluding rice&quot;' value='Cereals' />
+          <alias key='&quot;Hen eggs in shell, fresh&quot;' value='Hen eggs' />
+          <alias key='&quot;Meat of buffalo, fresh or chilled&quot;' value='Meat of buffalo' />
+          <alias key='&quot;Meat of cattle with the bone, fresh or chilled&quot;' value='Meat of cattle' />
+          <alias key='&quot;Meat of chickens, fresh or chilled&quot;' value='Meat of chickens' />
+          <alias key='&quot;Meat of goat, fresh or chilled&quot;' value='Meat of goat' />
+          <alias key='&quot;Meat of pig with the bone, fresh or chilled&quot;' value='Meat of pig' />
+          <alias key='&quot;Meat of sheep, fresh or chilled&quot;' value='Meat of sheep' />
+        </aliases>
+      </column>
+      <column caption='Production Tonnes' datatype='real' name='[production_tonnes]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+      <column-instance column='[food_item]' derivation='None' name='[none:food_item:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_1oaz7kr1qci8n013i6g201v34oqf.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>final_merged_dataset_Food_Climate_Project.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>324</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>final_merged_dataset_Food_Climate_Project.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>62</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>food_item</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[food_item]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>food_item</remote-alias>
+              <ordinal>2</ordinal>
+              <family>final_merged_dataset_Food_Climate_Project.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_year_temp_change</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_year_temp_change]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_year_temp_change</remote-alias>
+              <ordinal>3</ordinal>
+              <family>final_merged_dataset_Food_Climate_Project.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21235</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country_code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country_code</remote-alias>
+              <ordinal>4</ordinal>
+              <family>final_merged_dataset_Food_Climate_Project.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>323</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>emissions_CO2eq_AR5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[emissions_CO2eq_AR5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>emissions_CO2eq_AR5</remote-alias>
+              <ordinal>5</ordinal>
+              <family>final_merged_dataset_Food_Climate_Project.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69177</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GHG_kg</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[GHG_kg]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GHG_kg</remote-alias>
+              <ordinal>6</ordinal>
+              <family>final_merged_dataset_Food_Climate_Project.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>74581</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>production_tonnes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[production_tonnes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>production_tonnes</remote-alias>
+              <ordinal>7</ordinal>
+              <family>final_merged_dataset_Food_Climate_Project.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21093</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:country:nk]' palette='red_gold_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>&quot;Zimbabwe&quot;</bucket>
+            </map>
+            <map to='#2f6891'>
+              <bucket>&quot;Yemen&quot;</bucket>
+            </map>
+            <map to='#33789d'>
+              <bucket>&quot;Tonga&quot;</bucket>
+            </map>
+            <map to='#3589a9'>
+              <bucket>&quot;Tokelau&quot;</bucket>
+            </map>
+            <map to='#3e99b4'>
+              <bucket>&quot;Timor-Leste&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cabo Verde&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;French Polynesia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Madagascar&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Republic of Moldova&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Uganda&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Afghanistan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bolivia (Plurinational State of)&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Comoros&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Guyana&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Lao People&apos;s Democratic Republic&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Paraguay&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Serbia and Montenegro&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Zambia&quot;</bucket>
+            </map>
+            <map to='#53a9bd'>
+              <bucket>&quot;Solomon Islands&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Antigua and Barbuda&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Brunei Darussalam&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Croatia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Faroe Islands&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Iceland&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Liberia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Namibia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Slovakia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Trinidad and Tobago&quot;</bucket>
+            </map>
+            <map to='#6eb8c5'>
+              <bucket>&quot;Niue&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Bangladesh&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Central African Republic&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Djibouti&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Jamaica&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mali&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Saint Kitts and Nevis&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sudan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Azerbaijan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cambodia&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Democratic People&apos;s Republic of Korea&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Gabon&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Malawi&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Nicaragua&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;South Sudan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+            <map to='#87c6cc'>
+              <bucket>&quot;Nepal&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cuba&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Fiji&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Libya&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Nauru&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Puerto Rico&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Tunisia&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;United States of America&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Benin&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;China, Taiwan Province of&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Equatorial Guinea&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Guinea&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kuwait&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Micronesia (Federated States of)&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Panama&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Senegal&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Tajikistan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Albania&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Bosnia and Herzegovina&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Congo&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Eswatini&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Haiti&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Morocco&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Seychelles&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Togo&quot;</bucket>
+            </map>
+            <map to='#a0d4d1'>
+              <bucket>&quot;Czechoslovakia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Belgium-Luxembourg&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;China, Macao SAR&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Egypt&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Guadeloupe&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mauritius&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sao Tome and Principe&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Vanuatu&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Armenia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Burkina Faso&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cyprus&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Qatar&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Turkmenistan&quot;</bucket>
+            </map>
+            <map to='#b71d3e'>
+              <bucket>&quot;Slovenia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Barbados&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Chad&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Dominica&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Ghana&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Malta&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;North Macedonia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Saint Lucia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sudan (former)&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Uruguay&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;USSR&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;Chile&quot;</bucket>
+            </map>
+            <map to='#c53241'>
+              <bucket>&quot;Serbia&quot;</bucket>
+            </map>
+            <map to='#d14544'>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Dominican Republic&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Greece&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jordan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Martinique&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Saint Vincent and the Grenadines&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Suriname&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Belize&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;El Salvador&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Guatemala&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kiribati&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Palestine&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Syrian Arab Republic&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Venezuela (Bolivarian Republic of)&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Bhutan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Eritrea&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Guinea-Bissau&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kyrgyzstan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Mongolia&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Papua New Guinea&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Yugoslav SFR&quot;</bucket>
+            </map>
+            <map to='#de5747'>
+              <bucket>&quot;Montenegro&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bahamas&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cameroon&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;China, mainland&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Democratic Republic of the Congo&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Gambia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Israel&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Malaysia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Niger&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+            </map>
+            <map to='#e96949'>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Burundi&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Czechia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Iran (Islamic Republic of)&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;New Caledonia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Republic of Korea&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Somalia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Tuvalu&quot;</bucket>
+            </map>
+            <map to='#f27b4a'>
+              <bucket>&quot;Lithuania&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Algeria&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Botswana&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cook Islands&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Ethiopia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Honduras&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lebanon&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mozambique&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Philippines&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Sierra Leone&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;Belarus&quot;</bucket>
+            </map>
+            <map to='#f6bb58'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#f9a550'>
+              <bucket>&quot;Estonia&quot;</bucket>
+            </map>
+            <map to='#fa8f4d'>
+              <bucket>&quot;Latvia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;China, Hong Kong SAR&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ecuador&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Grenada&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Kazakhstan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mauritania&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Oman&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Samoa&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Uzbekistan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Bahrain&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Maldives&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Nigeria&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Rwanda&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sri Lanka&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;United Republic of Tanzania&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Angola&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Costa Rica&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ethiopia PDR&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Lesotho&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Myanmar&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Singapore&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:food_item:nk]' palette='tableau20_10_0' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Raw milk of buffalo&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cereals excluding rice&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Meat of chickens, fresh or chilled&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Raw milk of sheep&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Raw milk of camel&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Meat of goat, fresh or chilled&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Hen eggs in shell, fresh&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Meat of pig with the bone, fresh or chilled&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Rice&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Raw milk of cattle&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Meat of sheep, fresh or chilled&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Meat of buffalo, fresh or chilled&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Raw milk of goats&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Meat of cattle with the bone, fresh or chilled&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='country' />
+        <field-sort-custom-order field='year' />
+        <field-sort-custom-order field='food_item' />
+        <field-sort-custom-order field='avg_year_temp_change' />
+        <field-sort-custom-order field='country_code' />
+        <field-sort-custom-order field='emissions_CO2eq_AR5' />
+        <field-sort-custom-order field='GHG_kg' />
+        <field-sort-custom-order field='production_tonnes' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field='Calculation_4395513262399721472' />
+        <field-sort-custom-order field='Calculation_4395513262399787009' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='final_merged_dataset_Food_Climate_Project.csv' id='final_merged_dataset_Food_Climate_Project.csv_CB06D0161C0840A6A17ABA5DD137C5CD'>
+            <properties context=''>
+              <relation connection='textscan.0hnudat0qt8y97111zv0u0abxwyg' name='final_merged_dataset_Food_Climate_Project.csv' table='[final_merged_dataset_Food_Climate_Project#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+                  <column datatype='string' name='country' ordinal='0' />
+                  <column datatype='integer' name='year' ordinal='1' />
+                  <column datatype='string' name='food_item' ordinal='2' />
+                  <column datatype='real' name='avg_year_temp_change' ordinal='3' />
+                  <column datatype='string' name='country_code' ordinal='4' />
+                  <column datatype='real' name='emissions_CO2eq_AR5' ordinal='5' />
+                  <column datatype='real' name='GHG_kg' ordinal='6' />
+                  <column datatype='real' name='production_tonnes' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='KPI_total_production_yearly' inline='true' name='federated.1grz7ah1u3xwsa14xd7wf1pu8jte' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='KPI_total_production_yearly' name='textscan.0fzb17y0fozwcy18qvqpa1e6fr71'>
+            <connection class='textscan' directory='/Users/ivanacaridad/Documents/GitHub/Food-Climate-Data-Driven-Sustainability' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0fzb17y0fozwcy18qvqpa1e6fr71' name='KPI_total_production_yearly.csv' table='[KPI_total_production_yearly#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='country' ordinal='1' />
+            <column datatype='real' name='production_tonnes' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[KPI_total_production_yearly.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¤&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[KPI_total_production_yearly.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[KPI_total_production_yearly.csv_36C2A99A39CD41DE8B8A33E3A84B308D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[KPI_total_production_yearly.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[KPI_total_production_yearly.csv_36C2A99A39CD41DE8B8A33E3A84B308D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>production_tonnes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[production_tonnes]</local-name>
+            <parent-name>[KPI_total_production_yearly.csv]</parent-name>
+            <remote-alias>production_tonnes</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[KPI_total_production_yearly.csv_36C2A99A39CD41DE8B8A33E3A84B308D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='KPI_total_production_yearly.csv' datatype='table' name='[__tableau_internal_object_id__].[KPI_total_production_yearly.csv_36C2A99A39CD41DE8B8A33E3A84B308D]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Production Tonnes' datatype='real' name='[production_tonnes]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_0dtuoc0023068r17uzwyg0dldr0u.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>KPI_total_production_yearly.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>62</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>1</ordinal>
+              <family>KPI_total_production_yearly.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>223</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>production_tonnes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[production_tonnes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>production_tonnes</remote-alias>
+              <ordinal>2</ordinal>
+              <family>KPI_total_production_yearly.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10121</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='KPI_total_production_yearly.csv' id='KPI_total_production_yearly.csv_36C2A99A39CD41DE8B8A33E3A84B308D'>
+            <properties context=''>
+              <relation connection='textscan.0fzb17y0fozwcy18qvqpa1e6fr71' name='KPI_total_production_yearly.csv' table='[KPI_total_production_yearly#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='string' name='country' ordinal='1' />
+                  <column datatype='real' name='production_tonnes' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Food_item_Distrib'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Food Product distribution </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_merged_dataset_Food_Climate_Project' name='federated.0skrw3m16do58u110kglw13hqk5k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0skrw3m16do58u110kglw13hqk5k'>
+            <column-instance column='[food_item]' derivation='Attribute' name='[attr:food_item:nk]' pivot='key' type='nominal' />
+            <column-instance column='[food_item]' derivation='Count' name='[cnt:food_item:qk]' pivot='key' type='quantitative' />
+            <column caption='Food Item' datatype='string' name='[food_item]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Cereals excluding rice&quot;' value='Cereals' />
+                <alias key='&quot;Hen eggs in shell, fresh&quot;' value='Hen eggs' />
+                <alias key='&quot;Meat of buffalo, fresh or chilled&quot;' value='Meat of buffalo' />
+                <alias key='&quot;Meat of cattle with the bone, fresh or chilled&quot;' value='Meat of cattle' />
+                <alias key='&quot;Meat of chickens, fresh or chilled&quot;' value='Meat of chickens' />
+                <alias key='&quot;Meat of goat, fresh or chilled&quot;' value='Meat of goat' />
+                <alias key='&quot;Meat of pig with the bone, fresh or chilled&quot;' value='Meat of pig' />
+                <alias key='&quot;Meat of sheep, fresh or chilled&quot;' value='Meat of sheep' />
+              </aliases>
+            </column>
+            <column-instance column='[food_item]' derivation='None' name='[none:food_item:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0skrw3m16do58u110kglw13hqk5k].[none:food_item:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:food_item:nk]' member='&quot;Cereals excluding rice&quot;' />
+              <groupfilter function='member' level='[none:food_item:nk]' member='&quot;Hen eggs in shell, fresh&quot;' />
+              <groupfilter function='member' level='[none:food_item:nk]' member='&quot;Meat of buffalo, fresh or chilled&quot;' />
+              <groupfilter function='member' level='[none:food_item:nk]' member='&quot;Meat of cattle with the bone, fresh or chilled&quot;' />
+              <groupfilter function='member' level='[none:food_item:nk]' member='&quot;Meat of chickens, fresh or chilled&quot;' />
+              <groupfilter function='member' level='[none:food_item:nk]' member='&quot;Meat of goat, fresh or chilled&quot;' />
+              <groupfilter function='member' level='[none:food_item:nk]' member='&quot;Meat of pig with the bone, fresh or chilled&quot;' />
+              <groupfilter function='member' level='[none:food_item:nk]' member='&quot;Meat of sheep, fresh or chilled&quot;' />
+              <groupfilter function='member' level='[none:food_item:nk]' member='&quot;Raw milk of buffalo&quot;' />
+              <groupfilter function='member' level='[none:food_item:nk]' member='&quot;Raw milk of camel&quot;' />
+              <groupfilter function='member' level='[none:food_item:nk]' member='&quot;Raw milk of cattle&quot;' />
+              <groupfilter function='member' level='[none:food_item:nk]' member='&quot;Raw milk of goats&quot;' />
+              <groupfilter function='member' level='[none:food_item:nk]' member='&quot;Raw milk of sheep&quot;' />
+              <groupfilter function='member' level='[none:food_item:nk]' member='&quot;Rice&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0skrw3m16do58u110kglw13hqk5k].[none:food_item:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Meat of chickens, fresh or chilled&quot;</bucket>
+              <bucket>&quot;Hen eggs in shell, fresh&quot;</bucket>
+              <bucket>&quot;Meat of cattle with the bone, fresh or chilled&quot;</bucket>
+              <bucket>&quot;Raw milk of cattle&quot;</bucket>
+              <bucket>&quot;Meat of sheep, fresh or chilled&quot;</bucket>
+              <bucket>&quot;Cereals excluding rice&quot;</bucket>
+              <bucket>&quot;Meat of pig with the bone, fresh or chilled&quot;</bucket>
+              <bucket>&quot;Meat of goat, fresh or chilled&quot;</bucket>
+              <bucket>&quot;Rice&quot;</bucket>
+              <bucket>&quot;Raw milk of goats&quot;</bucket>
+              <bucket>&quot;Raw milk of sheep&quot;</bucket>
+              <bucket>&quot;Meat of buffalo, fresh or chilled&quot;</bucket>
+              <bucket>&quot;Raw milk of camel&quot;</bucket>
+              <bucket>&quot;Raw milk of buffalo&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0skrw3m16do58u110kglw13hqk5k].[none:food_item:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0skrw3m16do58u110kglw13hqk5k].[cnt:food_item:qk]' scope='rows' value='Food Item distribution' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0skrw3m16do58u110kglw13hqk5k].[none:food_item:nk]' />
+              <lod column='[federated.0skrw3m16do58u110kglw13hqk5k].[attr:food_item:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0skrw3m16do58u110kglw13hqk5k].[cnt:food_item:qk]</rows>
+        <cols>[federated.0skrw3m16do58u110kglw13hqk5k].[none:food_item:nk]</cols>
+        <show-full-range>
+          <column>[federated.0skrw3m16do58u110kglw13hqk5k].[Production Tonnes (bin)]</column>
+        </show-full-range>
+        <tooltip-style tooltip-mode='sticky' />
+      </table>
+      <simple-id uuid='{6E642F9E-7ED1-4A77-B394-186438977065}' />
+    </worksheet>
+    <worksheet name='KPI_prod_country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#555555' fontname='Apple Braille'>Total Food Production over time (1961 - 2022)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Food-climate-project/KPI_prod_country?rev=' id='118517965' path='/workbooks/Food-climate-project' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_merged_dataset_Food_Climate_Project' name='federated.0skrw3m16do58u110kglw13hqk5k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0skrw3m16do58u110kglw13hqk5k'>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Production Tonnes' datatype='real' name='[production_tonnes]' role='measure' type='quantitative' />
+            <column-instance column='[production_tonnes]' derivation='Sum' name='[sum:production_tonnes:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0skrw3m16do58u110kglw13hqk5k].[none:country:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([production_tonnes])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0skrw3m16do58u110kglw13hqk5k].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0skrw3m16do58u110kglw13hqk5k].[none:year:qk]' field-type='quantitative' max='2022' min='1957' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0skrw3m16do58u110kglw13hqk5k].[sum:production_tonnes:qk]' scope='rows' value='Production (t)' />
+            <format attr='auto-subtitle' class='0' field='[federated.0skrw3m16do58u110kglw13hqk5k].[sum:production_tonnes:qk]' scope='rows' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0skrw3m16do58u110kglw13hqk5k].[none:country:nk]' />
+              <lod column='[federated.0skrw3m16do58u110kglw13hqk5k].[sum:production_tonnes:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <_.fcp.PatternedLineMarks.true...format attr='mark-line-pattern' value='dotted' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0skrw3m16do58u110kglw13hqk5k].[sum:production_tonnes:qk]</rows>
+        <cols>[federated.0skrw3m16do58u110kglw13hqk5k].[none:year:qk]</cols>
+        <tooltip-style tooltip-mode='sticky' />
+      </table>
+      <simple-id uuid='{0E0594F2-270F-4BE4-BEE1-153BCB21CA31}' />
+    </worksheet>
+    <worksheet name='Prod'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#555555' fontname='Apple Braille' italic='true'>Most produced Food Products globally</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Food-climate-project/Prod?rev=' id='118517623' path='/workbooks/Food-climate-project' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_merged_dataset_Food_Climate_Project' name='federated.0skrw3m16do58u110kglw13hqk5k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0skrw3m16do58u110kglw13hqk5k'>
+            <column caption='Food Item' datatype='string' name='[food_item]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Cereals excluding rice&quot;' value='Cereals' />
+                <alias key='&quot;Hen eggs in shell, fresh&quot;' value='Hen eggs' />
+                <alias key='&quot;Meat of buffalo, fresh or chilled&quot;' value='Meat of buffalo' />
+                <alias key='&quot;Meat of cattle with the bone, fresh or chilled&quot;' value='Meat of cattle' />
+                <alias key='&quot;Meat of chickens, fresh or chilled&quot;' value='Meat of chickens' />
+                <alias key='&quot;Meat of goat, fresh or chilled&quot;' value='Meat of goat' />
+                <alias key='&quot;Meat of pig with the bone, fresh or chilled&quot;' value='Meat of pig' />
+                <alias key='&quot;Meat of sheep, fresh or chilled&quot;' value='Meat of sheep' />
+              </aliases>
+            </column>
+            <column-instance column='[food_item]' derivation='None' name='[none:food_item:nk]' pivot='key' type='nominal' />
+            <column caption='Production Tonnes' datatype='real' name='[production_tonnes]' role='measure' type='quantitative' />
+            <column-instance column='[production_tonnes]' derivation='Sum' name='[sum:production_tonnes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0skrw3m16do58u110kglw13hqk5k].[none:food_item:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0skrw3m16do58u110kglw13hqk5k].[sum:production_tonnes:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0skrw3m16do58u110kglw13hqk5k].[sum:production_tonnes:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='data-highlighter'>
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.0skrw3m16do58u110kglw13hqk5k].[none:food_item:nk]' value='10' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.0skrw3m16do58u110kglw13hqk5k].[none:food_item:nk]' value='bold' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0skrw3m16do58u110kglw13hqk5k].[none:food_item:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0skrw3m16do58u110kglw13hqk5k].[none:food_item:nk]</rows>
+        <cols>[federated.0skrw3m16do58u110kglw13hqk5k].[sum:production_tonnes:qk]</cols>
+      </table>
+      <simple-id uuid='{2BE3E492-BCC1-45CF-927E-2A3A8BD7718C}' />
+    </worksheet>
+    <worksheet name='less_country_temp'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#555555' fontname='Apple Braille'>Top 10 countries with less variation in temperature change </run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#555555' fontname='Apple Braille'>over time (1961 - 2022)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_merged_dataset_Food_Climate_Project' name='federated.0skrw3m16do58u110kglw13hqk5k' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0skrw3m16do58u110kglw13hqk5k'>
+            <column-instance column='[avg_year_temp_change]' derivation='Avg' name='[avg:avg_year_temp_change:qk]' pivot='key' type='quantitative' />
+            <column caption='Avg Year Temp Change' datatype='real' name='[avg_year_temp_change]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0skrw3m16do58u110kglw13hqk5k].[none:country:nk]'>
+            <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([avg_year_temp_change])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Afghanistan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Albania&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Algeria&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Angola&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Antigua and Barbuda&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Argentina&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Armenia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Australia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Austria&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Azerbaijan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Bahamas&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Bahrain&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Bangladesh&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Barbados&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Belarus&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Belgium&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Belgium-Luxembourg&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Belize&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Benin&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Bhutan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Bolivia (Plurinational State of)&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Bosnia and Herzegovina&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Botswana&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Brazil&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Brunei Darussalam&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Bulgaria&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Burkina Faso&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Burundi&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Cabo Verde&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Cambodia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Cameroon&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Canada&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Central African Republic&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Chad&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Chile&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;China, Hong Kong SAR&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;China, Macao SAR&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;China, mainland&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;China, Taiwan Province of&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Colombia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Comoros&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Congo&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Cook Islands&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Costa Rica&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Croatia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Cuba&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Cyprus&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Czechia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Czechoslovakia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Democratic People&apos;s Republic of Korea&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Democratic Republic of the Congo&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Denmark&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Djibouti&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Dominica&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Dominican Republic&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Ecuador&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Egypt&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;El Salvador&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Equatorial Guinea&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Eritrea&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Estonia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Eswatini&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Ethiopia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Faroe Islands&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Fiji&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Finland&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;France&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;French Polynesia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Gabon&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Gambia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Georgia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Germany&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Ghana&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Greece&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Grenada&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Guadeloupe&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Guatemala&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Guinea&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Guinea-Bissau&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Guyana&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Haiti&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Honduras&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Hungary&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Iceland&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;India&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Indonesia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Iran (Islamic Republic of)&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Iraq&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Ireland&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Israel&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Italy&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Jamaica&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Japan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Jordan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Kazakhstan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Kenya&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Kiribati&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Kuwait&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Kyrgyzstan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Lao People&apos;s Democratic Republic&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Latvia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Lebanon&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Lesotho&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Liberia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Libya&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Lithuania&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Luxembourg&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Madagascar&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Malawi&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Malaysia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Maldives&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Mali&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Malta&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Martinique&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Mauritania&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Mauritius&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Mexico&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Micronesia (Federated States of)&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Mongolia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Montenegro&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Morocco&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Mozambique&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Myanmar&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Namibia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Nepal&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;New Caledonia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;New Zealand&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Nicaragua&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Niger&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Nigeria&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Niue&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;North Macedonia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Norway&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Oman&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Pakistan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Palestine&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Panama&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Papua New Guinea&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Paraguay&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Peru&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Philippines&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Poland&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Portugal&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Puerto Rico&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Qatar&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Republic of Korea&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Republic of Moldova&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Romania&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Russian Federation&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Rwanda&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Saint Kitts and Nevis&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Saint Lucia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Saint Vincent and the Grenadines&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Samoa&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Sao Tome and Principe&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Saudi Arabia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Senegal&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Serbia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Serbia and Montenegro&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Seychelles&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Sierra Leone&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Singapore&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Slovakia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Slovenia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Solomon Islands&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Somalia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;South Africa&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;South Sudan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Spain&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Sri Lanka&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Sudan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Sudan (former)&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Suriname&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Sweden&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Switzerland&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Syrian Arab Republic&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Tajikistan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Thailand&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Timor-Leste&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Togo&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Tokelau&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Tonga&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Trinidad and Tobago&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Tunisia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Turkmenistan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Tuvalu&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Uganda&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Ukraine&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;United Arab Emirates&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;United Republic of Tanzania&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;United States of America&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Uruguay&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Uzbekistan&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Vanuatu&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Venezuela (Bolivarian Republic of)&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Yemen&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Zambia&quot;' />
+                  <groupfilter function='member' level='[none:country:nk]' member='&quot;Zimbabwe&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0skrw3m16do58u110kglw13hqk5k].[none:country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0skrw3m16do58u110kglw13hqk5k].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]' scope='cols' value='Average Temperature change' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0skrw3m16do58u110kglw13hqk5k].[none:country:nk]' />
+              <lod column='[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0skrw3m16do58u110kglw13hqk5k].[none:country:nk]</rows>
+        <cols>[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]</cols>
+      </table>
+      <simple-id uuid='{4809A009-27FD-4333-B835-2E4E5AEB925B}' />
+    </worksheet>
+    <worksheet name='map_prod'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/Food-climate-project/Sheet3?rev=' id='118517966' path='/workbooks/Food-climate-project' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_merged_dataset_Food_Climate_Project' name='federated.0skrw3m16do58u110kglw13hqk5k' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0skrw3m16do58u110kglw13hqk5k'>
+            <column-instance column='[country]' derivation='Attribute' name='[attr:country:nk]' pivot='key' type='nominal' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Country Code' datatype='string' name='[country_code]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Geographical].[Longitude]'>
+                <semantic-value key='&quot;CSK&quot;' value='15.473000000000001' />
+              </semantic-values>
+              <semantic-values semantic-role='[Geographical].[Latitude]'>
+                <semantic-value key='&quot;CSK&quot;' value='49.817500000000003' />
+              </semantic-values>
+            </column>
+            <column-instance column='[country_code]' derivation='None' name='[none:country_code:nk]' pivot='key' type='nominal' />
+            <column caption='Production Tonnes' datatype='real' name='[production_tonnes]' role='measure' type='quantitative' />
+            <column-instance column='[production_tonnes]' derivation='Sum' name='[sum:production_tonnes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0skrw3m16do58u110kglw13hqk5k].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0skrw3m16do58u110kglw13hqk5k].[Longitude (generated)]' included-values='non-null' />
+          <slices>
+            <column>[federated.0skrw3m16do58u110kglw13hqk5k].[Latitude (generated)]</column>
+            <column>[federated.0skrw3m16do58u110kglw13hqk5k].[Longitude (generated)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0skrw3m16do58u110kglw13hqk5k].[Longitude (generated)]' field-type='quantitative' max='-139053261.66602352' min='-183315803.74452618' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0skrw3m16do58u110kglw13hqk5k].[Latitude (generated)]' field-type='quantitative' max='37845867.493026525' min='9511577.9831122309' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0skrw3m16do58u110kglw13hqk5k].[sum:production_tonnes:qk]' num-steps='8' palette='brown_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='hillshade_highlight_bright' value='true' />
+            <format attr='enabled' id='hillshade_highlight_med' value='true' />
+            <format attr='enabled' id='hillshade_shadow_faint' value='true' />
+            <format attr='enabled' id='hillshade_shadow_med' value='true' />
+            <format attr='enabled' id='hillshade_shadow_dark' value='true' />
+            <format attr='enabled' id='hillshade_shadow_extreme' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries-bg' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries-dispute' value='true' />
+            <format attr='enabled' id='light-admin-0-label-5th-tier' value='true' />
+            <format attr='enabled' id='light-admin-0-label-4th-tier' value='true' />
+            <format attr='enabled' id='light-admin-0-label-3rd-tier' value='true' />
+            <format attr='enabled' id='light-admin-0-label-2nd-tier' value='true' />
+            <format attr='enabled' id='light-admin-0-label-1st-tier' value='true' />
+            <format attr='enabled' id='admin-2-boundaries-bg' value='true' />
+            <format attr='enabled' id='admin-2-boundaries' value='true' />
+            <format attr='enabled' id='admin-2-label' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0skrw3m16do58u110kglw13hqk5k].[sum:production_tonnes:qk]' />
+              <lod column='[federated.0skrw3m16do58u110kglw13hqk5k].[none:country_code:nk]' />
+              <tooltip column='[federated.0skrw3m16do58u110kglw13hqk5k].[attr:country:nk]' />
+              <geometry column='[federated.0skrw3m16do58u110kglw13hqk5k].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='2.1546962261199951' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0skrw3m16do58u110kglw13hqk5k].[Latitude (generated)]</rows>
+        <cols>[federated.0skrw3m16do58u110kglw13hqk5k].[Longitude (generated)]</cols>
+        <tooltip-style tooltip-mode='sticky' />
+      </table>
+      <simple-id uuid='{286BE15C-7A5C-4442-886C-D721417DBBDF}' />
+    </worksheet>
+    <worksheet name='map_temp'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_merged_dataset_Food_Climate_Project' name='federated.0skrw3m16do58u110kglw13hqk5k' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0skrw3m16do58u110kglw13hqk5k'>
+            <column-instance column='[country]' derivation='Attribute' name='[attr:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[avg_year_temp_change]' derivation='Avg' name='[avg:avg_year_temp_change:qk]' pivot='key' type='quantitative' />
+            <column caption='Avg Year Temp Change' datatype='real' name='[avg_year_temp_change]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Country Code' datatype='string' name='[country_code]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Geographical].[Longitude]'>
+                <semantic-value key='&quot;CSK&quot;' value='15.473000000000001' />
+              </semantic-values>
+              <semantic-values semantic-role='[Geographical].[Latitude]'>
+                <semantic-value key='&quot;CSK&quot;' value='49.817500000000003' />
+              </semantic-values>
+            </column>
+            <column-instance column='[country_code]' derivation='None' name='[none:country_code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[avg_year_temp_change]' derivation='Sum' name='[sum:avg_year_temp_change:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0skrw3m16do58u110kglw13hqk5k].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0skrw3m16do58u110kglw13hqk5k].[Longitude (generated)]' included-values='non-null' />
+          <slices>
+            <column>[federated.0skrw3m16do58u110kglw13hqk5k].[Latitude (generated)]</column>
+            <column>[federated.0skrw3m16do58u110kglw13hqk5k].[Longitude (generated)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0skrw3m16do58u110kglw13hqk5k].[Longitude (generated)]' field-type='quantitative' max='80761629.415422261' min='611596.04426531121' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0skrw3m16do58u110kglw13hqk5k].[Latitude (generated)]' field-type='quantitative' max='33493044.725795578' min='-17814316.829261281' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0skrw3m16do58u110kglw13hqk5k].[sum:avg_year_temp_change:qk]' num-steps='12' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='hillshade_highlight_bright' value='true' />
+            <format attr='enabled' id='hillshade_highlight_med' value='true' />
+            <format attr='enabled' id='hillshade_shadow_faint' value='true' />
+            <format attr='enabled' id='hillshade_shadow_med' value='true' />
+            <format attr='enabled' id='hillshade_shadow_dark' value='true' />
+            <format attr='enabled' id='hillshade_shadow_extreme' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries-bg' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries-dispute' value='true' />
+            <format attr='enabled' id='light-admin-0-label-5th-tier' value='true' />
+            <format attr='enabled' id='light-admin-0-label-4th-tier' value='true' />
+            <format attr='enabled' id='light-admin-0-label-3rd-tier' value='true' />
+            <format attr='enabled' id='light-admin-0-label-2nd-tier' value='true' />
+            <format attr='enabled' id='light-admin-0-label-1st-tier' value='true' />
+            <format attr='enabled' id='admin-2-boundaries-bg' value='true' />
+            <format attr='enabled' id='admin-2-boundaries' value='true' />
+            <format attr='enabled' id='admin-2-label' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0skrw3m16do58u110kglw13hqk5k].[sum:avg_year_temp_change:qk]' />
+              <lod column='[federated.0skrw3m16do58u110kglw13hqk5k].[none:country_code:nk]' />
+              <lod column='[federated.0skrw3m16do58u110kglw13hqk5k].[attr:country:nk]' />
+              <lod column='[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]' />
+              <geometry column='[federated.0skrw3m16do58u110kglw13hqk5k].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0skrw3m16do58u110kglw13hqk5k].[Latitude (generated)]</rows>
+        <cols>[federated.0skrw3m16do58u110kglw13hqk5k].[Longitude (generated)]</cols>
+        <tooltip-style tooltip-mode='sticky' />
+      </table>
+      <simple-id uuid='{AAC282FC-99B3-4501-A672-B11AE15398CC}' />
+    </worksheet>
+    <worksheet name='temp_change'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#555555' fontname='Apple Braille' fontsize='16'>Average temperature change globally</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#555555' fontname='Apple Braille' fontsize='16'>(1961 - 2022)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_merged_dataset_Food_Climate_Project' name='federated.0skrw3m16do58u110kglw13hqk5k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0skrw3m16do58u110kglw13hqk5k'>
+            <column-instance column='[avg_year_temp_change]' derivation='Avg' name='[avg:avg_year_temp_change:qk]' pivot='key' type='quantitative' />
+            <column caption='Avg Year Temp Change' datatype='real' name='[avg_year_temp_change]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]' included-values='in-range'>
+            <min>0.0</min>
+            <max>1.4960233455357042</max>
+          </filter>
+          <slices>
+            <column>[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0skrw3m16do58u110kglw13hqk5k].[none:year:qk]' field-type='quantitative' max='2022' min='1957' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]' field-type='quantitative' max='1.5869344826902876' min='0.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]' value='n#,##0.00&quot;°C&quot;;-#,##0.00&quot;°C&quot;' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline degree='2' enable-confidence-bands='false' enable-instant-analytics='false' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e91918' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]</rows>
+        <cols>[federated.0skrw3m16do58u110kglw13hqk5k].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{856743EE-8845-4028-B08C-1AA31AA65BE0}' />
+    </worksheet>
+    <worksheet name='top_country_tem'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#555555' fontname='Apple Braille'>Top 10 countries with more variation in temperature change </run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#555555' fontname='Apple Braille'>over time (1961 - 2022)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_merged_dataset_Food_Climate_Project' name='federated.0skrw3m16do58u110kglw13hqk5k' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0skrw3m16do58u110kglw13hqk5k'>
+            <column-instance column='[avg_year_temp_change]' derivation='Avg' name='[avg:avg_year_temp_change:qk]' pivot='key' type='quantitative' />
+            <column caption='Avg Year Temp Change' datatype='real' name='[avg_year_temp_change]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0skrw3m16do58u110kglw13hqk5k].[none:country:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([avg_year_temp_change])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0skrw3m16do58u110kglw13hqk5k].[none:country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0skrw3m16do58u110kglw13hqk5k].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]' scope='cols' value='Average Temperature change' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0skrw3m16do58u110kglw13hqk5k].[none:country:nk]' />
+              <lod column='[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0skrw3m16do58u110kglw13hqk5k].[none:country:nk]</rows>
+        <cols>[federated.0skrw3m16do58u110kglw13hqk5k].[avg:avg_year_temp_change:qk]</cols>
+      </table>
+      <simple-id uuid='{A3FA3269-935D-4FC1-BB52-523755E07727}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='KPI_prod_country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0skrw3m16do58u110kglw13hqk5k].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7E4166AE-5033-41E6-BC9C-D3AE76B80C3A}' />
+    </window>
+    <window class='worksheet' name='Prod'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{68294121-7865-4753-B8EA-666DA4D612B0}' />
+    </window>
+    <window class='worksheet' name='map_prod'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0skrw3m16do58u110kglw13hqk5k].[sum:production_tonnes:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <map-scale-visibility value='0' />
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{8182008F-B5CE-4186-922C-B8C404C1FADC}' />
+    </window>
+    <window class='worksheet' name='map_temp'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0skrw3m16do58u110kglw13hqk5k].[sum:avg_year_temp_change:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <map-scale-visibility value='0' />
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{79E887EE-CF08-4179-AA69-FCCBB0954BFE}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Food_item_Distrib'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0skrw3m16do58u110kglw13hqk5k].[none:food_item:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F2E15F9B-4D50-4FE0-BE74-4EC6FB241600}' />
+    </window>
+    <window class='worksheet' name='top_country_tem'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0skrw3m16do58u110kglw13hqk5k].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+      </viewpoint>
+      <simple-id uuid='{0087EC99-5BBF-479E-9D4B-72E95BBBD09C}' />
+    </window>
+    <window class='worksheet' name='less_country_temp'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0skrw3m16do58u110kglw13hqk5k].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+      </viewpoint>
+      <simple-id uuid='{95B061C5-7177-4B33-BD06-75C61051C1BA}' />
+    </window>
+    <window class='worksheet' name='temp_change'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{91A58E17-D31D-438E-B481-E5E08EB7BA36}' />
+    </window>
+  </windows>
+</workbook>
